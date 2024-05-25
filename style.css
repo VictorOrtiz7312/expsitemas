@@ -1,0 +1,59 @@
+:root{
+    --estado-buda:0.3s;
+    --cada-item:28px;
+    --cantidad-item:0;
+}
+body,html{
+    display: flex;
+    min-height: 100vh;
+    margin:0;
+    gap: 30px;
+    height: 100%;
+    width: 100vw;
+    background: url(img/fondo.png)center center;
+    background-size: cover;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+header{
+    width: 300px;
+    background: #0d6568;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+nav ul li{
+    border-bottom: 1px solid #0d6568 ;
+}
+nav ul a{
+    box-sizing: border-box;
+    color: white;
+    background: #121212;
+    display: block;
+    width: 100%;
+    padding: 6px, 10px;
+    text-decoration: none;
+}
+
+nav ul ul{
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+    counter-reset: items;
+}
+nav ul ul a{
+    background: #0d0d0d;
+}
+
+nav ul li:hover ul{
+    height: calc(var(--cantidad-item)*var(--cada-item));
+}
+.menu li a{
+    text-decoration: none;
+    text-decoration: #0d0d0d;
+}
