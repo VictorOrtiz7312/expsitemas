@@ -1,0 +1,16 @@
+body,html{
+    font-family: Arial;
+    background: url(img/fondo.png)center center;
+}
+.contenedor{
+    background-color: rgb(241, 243, 129);
+    height: max-content;
+    margin: 5%;
+display: flex;
+flex-direction: column;
+
+justify-content: space-around;
+}
+p{
+    align-items: center;
+}

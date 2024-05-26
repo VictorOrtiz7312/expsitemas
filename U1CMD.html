@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos CMD</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+    <H1>MANEJO DEL CMD</H1>
+    <p>COMANDO COPY CON EN CMD</p>
+    <p>INTRODUCCIÓN</p>
+        El CMD es una herramienta poderosa para usuarios avanzados que desean realizar tareas específicas de manera eficiente utilizando comandos de texto. Sin embargo, para tareas más cotidianas, muchos usuarios prefieren utilizar la interfaz gráfica proporcionada por el Explorador de Archivos.
+        A continuación, se describirá brevemente qué es el CMD y algunas de sus funciones.
+        <p>INFORMACION.</p>
+        CMD (acrónimo de Command) es el intérprete de la línea de comandos de los sistemas operativos Windows. Es el análogo a los Shells de Unix, como por ejemplo, Bash, y le da al usuario la opción de realizar operaciones usando comandos.
+        La línea de comandos de Windows ofrece acceso a un amplio abanico de herramientas que pueden ayudarnos a realizar prácticamente cualquier tarea que se podría efectuar hoy en día usando el entorno basado en ventanas y aplicaciones al que estamos acostumbrados, sin embargo, CMD puede ahorrarnos mucho tiempo para realizar las mismas operaciones.
+       <p> Algunos comandos que básicos que realizan diversas tareas en el sistema son los siguientes:</p>
+        <p>CD- Significa carpeta. Escribiendo CD Documentos entrarás en la carpeta Documentos. Y para salir de ella, solo se necesita escribir CD..</p>
+        <p>DIR- Muestra todo el contenido de un directorio (carpeta).</p>
+        <p> Muestra el árbol de carpetas de la carpeta que se indique.</p>
+       <p> MD- Crea una carpeta o directorio.</p>
+        <p>Mkdir- Crea un nuevo directorio.</p>
+        <p>MOVE- Te permite mover un archivo de un directorio a otro.</p>
+        <p>RENAME- Cambiar el nombre o la extensión de un archivo, como si lo hicieras en Windows.</p>
+        <p>DEL- Borra el archivo o carpeta que indiques tras un espacio.</p>
+        <p>DATE- Permite ver o cambiar la fecha del equipo.</p>
+        <p>DEL- Elimina el archivo que digas.</p>
+        <p>FIND- Busca una cadena de texto en uno o más archivos</p>
+        <p>Si el usuario desea crear nuevos archivos de texto mediante el uso de esta herramienta, se utilizará el comando COPY CON, seguido del nombre del archivo y su extensión. Un ejemplo sería:
+            <p>C:\Users\ortiz>COPY CON DocumentoDeTexto1.txt</p>
+            <p>Al haber escrito lo anterior y dar un ENTER, el sistema ha creado un archivo de texto con el nombre ArchivoPrueba.txt, en el cual podremos empezar a escribir la información de dicho archivo.</p>
+            Una vez hayamos terminado de agregar la información, habrá que presionar ENTER nuevamente y pulsar la combinación de teclas Ctrl+Z para que el texto sea finalizado y guardado.
+            </p>
+            <img class="img01" src="U1/comcmd/01.png" alt="">
+            <p>Si se desea comprobar la existencia de dicho archivo, es posible ejecutar el comando DIR para visualizar todos los archivos que se encuentran en dicha dirección.</p>
+            C:\Users\ortiz>DIR
+            <img class="img01" src="U1/comcmd/02.png" alt="">
+            MANEJO DE DIRECTORIO Y DE ARCHIVOS EN CMD
+<p>La herramienta de interfaz permite un manejo tanto de directorios y de archivos bastante amplio como los siguientes:</p>
+MANEJO DE DIRECTORIO
+<p>1- Crear un nuevo directorio - mkdir</p>
+C:\Users\ortiz>mkdir NombreDirectorio
+<p>2- Cambiar de directorio - cd</p>
+C:\Users\ortiz>cd Nueva\Ruta\
+<p>3- Mostrar contenido del directorio - DIR</p>
+C:\Users\ortiz>DIR
+<p>4- Eliminar un directorio vacío - rmdir</p>
+C:\Users\ortiz>rmdir NombreDirectorio
+<p>5- Copiar un directorio y su contenido - xcopy</p>
+C:\Users\ortiz>Origen\Directorio Destino\Directorio /s /e
+
+<p>MANEJO DE ARCHIVO</p>
+1- Copiar un archivo - copy
+<p>C:\Users\ortiz>copy ArchivoOrigen.txt Destino\</p>
+2- Mover un archivo - move
+<p>C:\Users\ortiz>move ArchivoOrigen.txt Destino\</p>
+3- Eliminar un archivo - del
+<p>C:\Users\ortiz>del NombreDelArchivo.txt</p>
+4- Renombrar un archivo - ren
+<p>C:\Users\ortiz>ren NombreAntiguo.txt NombreNuevo.txt</p>
+5- Mostrar el contenido de un archivo de texto - type
+<p>C:\Users\ortiz>type NombreDelArchivo.txt</p>
+
+Ahora bien, si lo que se quiere es ver el contenido total de los multiples directorios de todo el sistema, se utiliza el comando tree.
+<img class="img01" src="U1/comcmd/03.png" alt="">
+<h2>PRACTICA CON CMD </h2>
+<p>Se crea la carpeta con nuestro nombre</p>
+<img class="img01" src="U1/comcmd/04.png" alt="">
+<p>Nos cercioramos de que se allá creado </p>
+<img class="img01" src="U1/comcmd/05.png" alt="">
+<p>Ingresamos a la carpeta</p>
+<img class="img01" src="U1/comcmd/06.png" alt="">
+<p>Se crean las primeras 3 carpetas que contendrán nuestro ejercicio</p>
+<img class="img01" src="U1/comcmd/07.png" alt="">
+<p>Nos aseguramos de que se hallan creado</p>
+<img class="img01" src="U1/comcmd/08.png" alt="">
+<p>Se crean los primeros 3 documentos</p>
+<img class="img01" src="U1/comcmd/09.png" alt="">
+<p>Y hacemos lo mismo con las demás carpetas</p>
+<img class="img01" src="U1/comcmd/10.png" alt="">
+<p>Se hace uso del comando copy en la primera carpeta con uno de los achivos</p>
+<img class="img01" src="U1/comcmd/11.png" alt="">
+<p>Se usa el comando type para ver el contenido del archivo</p>
+<img class="img01" src="U1/comcmd/12.png" alt="">
+<p>Hacemos uso del comando ren para renombrar el archivo arch3.txt a arch3.1.txt</p>
+<img class="img01" src="U1/comcmd/13.png" alt="">
+<img class="img01" src="U1/comcmd/14.png" alt="">
+<p>Copiamos y movemos el archivo arch7.txt de la carpeta c3 a la carpeta c1</p>
+<img class="img01" src="U1/comcmd/15.png" alt="">
+<p>Usamos el comando del *.* para eliminar los archivos .txt de cada carpeta desde c1 a c3</p>
+<img class="img01" src="U1/comcmd/16.png" alt="">
+<img class="img01" src="U1/comcmd/17.png" alt="">
+<img class="img01" src="U1/comcmd/18.png" alt="">
+<p>Y finalizamos eliminado las carpetas con el nombre</p>
+<img class="img01" src="U1/comcmd/19.png" alt="">
+<img class="img01" src="U1/comcmd/20.png" alt="">
+<h3>BIBLIOGRAFIA</h3>
+<a href="https://ticgrup.com/los-comandos-cmd-que-deberias-conocer/ " target="_blank">Los comandos CMD que deberías conocer | TicGrup. (s.f.). TicGrup. </a>
+<a href="https://www.abrirllave.com/cmd/crear-archivos.php "target="_blank">Crear archivos en CMD. (s.f.). Abrirllave.com. </a>
+<a href=". https://www.xataka.com/basics/comandos-basicos-para-dar-tus-primeros-pasos-consola-windows-cmd" target="_blank">Fernández, Y. (2018, 13 de noviembre). 33 comandos básicos para dar tus primeros pasos en la consola de Windows (CMD). Xataka - Tecnología y gadgets, móviles, informática, electrónica</a>
+</div>
+</body>
+</html>

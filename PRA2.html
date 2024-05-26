@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica2 de MS-DOS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>PRACTICA MS-DOS</h1>
+        <p>1.- Crea la siguiente estructura jerárquica de directorios.</p>
+<p>MD PRINCI</p>
+<p>CD PRINCI</p>
+<p>MD DOCS</p>
+<p>CD ..</p>
+<p>MD PROGRAM</p>
+<p>CD ..</p>
+<p>MD APUNTES</p>
+<p>CD..</p>
+<p>CD DOCS</p>
+<p>MD EXCEL</p>
+<p>CD..</p>
+<p>MD WORD</p>
+<img class="img01" src="U1/pra2/01.png" alt="">
+<p>2.- Genera copiándolos desde la pantalla los siguientes archivos: fichero.txt y fichero2.txt (en PRINCI), doc1.txt y doc2.txt (en DOCS), tema1.doc y tema2.doc (en SISTEMAS).</p>
+<p>COPY CON FICHERO.TXT</p>
+<p>COPY CON FICHERO2.TXT</p>
+<p>CD DOCS</p>
+<p>COPY CON DOC1.TXT</p>
+<p>COPY CON DOC2.TXT</p>
+<p>CD..</p>
+<p>CD SISTEMAS</p>
+<p>COPY CON TEMA1.DOC</p>
+<p>COPY CON TEMA2.DOC</p>
+<img class="img01" src="U1/pra2/02.png" alt="">
+<p>3.- Estás en sistemas, sitúate en program. Hazlo de todas las formas que sepas.</p>
+<p>1. CD ..\..\PROGRAM</p>
+<p>2. CD C:\PRINCI\PROGRAM</p>
+<p>3. CD..</p>
+<p>CD..</p>
+<p>CD PROGRAM</p>
+<img class="img01" src="U1/pra2/03.png" alt="">
+<p>4.- Introduce como fecha del sistema la de tu nacimiento. ¿de cuántas formas puedes hacerlo?</p>
+<p>1. DATE 03-02-1978</p>
+<p>2. DATE</p>
+<p>-POSTERIORMENTE SE PULSA INTRO Y LA NUEVA FECHA QUEDA INSERTA</p>
+<img class="img01" src="U1/pra2/04.png" alt="">
+<p>5.- Retrasa la hora del sistema 3:45:15.</p>
+<p>TIME 3:45:15</p>
+<img class="img01" src="U1/pra2/05.png" alt="">
+<p>6.- Limpia la pantalla.</p>
+<p>CLS+INTRO</p>
+<img class="img01" src="U1/pra2/06.png" alt="">
+<p>7.- Actualiza fecha y hora del sistema. ¿de cuántas formas puedes hacerlo?</p>
+<p>1. DATE</p>
+<p>2. DATE 14-11-2011</p>
+<p>3. TIME</p>
+<p>4. TIME 08:48:01</p>
+<li><img class="img01" src="U1/pra2/07.png" alt=""></li>
+<p>8.- Visualiza la ayuda de la orden Prompt PROMPT</p>
+<p>PROMPT /?</p>
+<li><img class="img01" src="U1/pra2/08.png" alt=""></li>
+<p>9.- Modifica el símbolo del sistema para que aparezca la hora y tu nombre.</p>
+<p>PROMPT &T CARLOS G· HERNAN &G</p>
+<li><img class="img01" src="U1/pra2/09.png" alt=""></li>
+<p>10.- Visualiza la ayuda de la orden Dir.</p>
+<p>DIR /?</p>
+<li><img class="img01" src="U1/pra2/10.png" alt=""></li>
+<p>11.- ¿Cómo averiguas el directorio activo en el que te encuentras?</p>
+<p>CD muestra el directorio activo en el que nos encontramos.</p>
+<li><img class="img01" src="U1/pra2/11.png" alt=""></li>
+<p>12.- Modifica el prompt del sistema para dejarlo como antes (indica el directorio activo).</p>
+<p>PROMPT $P$G</p>
+<li><img class="img01" src="U1/pra2/12.png" alt=""></li>
+<p>13.- Lista el contenido del directorio Princip con los directorios antes de los archivos ordenados alfabéticamente por la extensión.</p>
+<ol>
+    <li>CD..</li>
+    <li>DIR/Oge</li>
+</ol>
+<li><img class="img01" src="U1/pra2/13.png" alt=""></li>
+<p>14.- Lista el contenido del directorio Princip ordenado por tamaño. Muestra también los archivos del nivel inferior.</p>
+<p>DIR /Ogs /S</p>
+<li><img class="img01" src="U1/pra2/14.png" alt=""></li>
+<p>15.- Realiza el ejercicio anterior pero desde el directorio \. Introduce el parámetro necesario para ver la información de forma paginada.</p>
+<ol>
+    <li>CD \</li>
+    <li>DIR /Ogs /S /P</li>
+</ol>
+<li><img class="img01" src="U1/pra2/15.png" alt=""></li>
+<p>16.- Sitúate en program. Utilizando una trayectoria relativa, crea el directorio “nuevo” dentro de Word.</p>
+<ol>
+    <li>CD C:\PRINCIP\PROGRAM</li>
+    <li>MD ..\DOCS\WORD\NUEVO</li>
+</ol>
+<li><img class="img01" src="U1/pra2/16.png" alt=""></li>
+<p>17.- Sitúate en Word y cambia el nombre del directorio “nuevo” por “textos”. ¿De cuántas formas puedes hacerlo?</p>
+<ol>
+    <li>CD..</li>
+    <li>CD DOCS</li>
+    <li>CD WORD</li>
+    <li>REN NUEVO TEXTOS</li>
+    <li>MOVE NUEVO TEXTOS</li>
+</ol>
+<li><img class="img01" src="U1/pra2/17.png" alt=""></li>
+<p>18.- Copia los archivos del directorio “princip” en el directorio “docs”, pero con extensión .bak.</p>
+<ol>
+    <li>CD ..\..</li>
+    <li>COPY *.* DOCS\*.BAK</li>
+</ol>
+<li><img class="img01" src="U1/pra2/18.png" alt=""></li>
+<p>19.- Copia los archivos que contengan un 2 del directorio “docs” al directorio “textos”.</p>
+<ol>
+    <li>CD DOCS</li>
+    <li>COPY *2.* WORD\TEXTOS</li>
+</ol>
+<li><img class="img01" src="U1/pra2/19.png" alt=""></li>
+<p>20.- Visualiza el contenido de los ficheros del directorio “textos”.</p>
+<ol>
+    <li>CD WORD</li>
+    <li>CD TEXTOS</li>
+    <li>TYPE DOC2.TXT</li>
+    <li>TYPE FICHERO2.BAK</li>
+</ol>
+<li><img class="img01" src="U1/pra2/20.png" alt=""></li>
+<p>21.- Copia los ficheros en uno solo llamado “fusión.txt”.</p>
+<ol>
+    <li>COPY DOC2.TXT+FICHERO2.BAK FUSION.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/21.png" alt=""></li>
+<p>22.- Visualiza el contenido de este nuevo fichero.</p>
+<ol>
+    <li>TYPE FUSION.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/22.png" alt=""></li>
+<p>23.- Mueve el fichero “fusión” al directorio “excel”.</p>
+<ol>
+    <li>MOVE FUSION.TXT ..\..\EXCEL</li>
+</ol>
+<li><img class="img01" src="U1/pra2/23.png" alt=""></li>
+<p>24.- Crea un fichero copiándolo desde la pantalla en el directorio anterior. Se llamará “prueba1.txt”.</p>
+<ol>
+    <li>COPY CON PRUEBA1.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/24.png" alt=""></li>
+<p>25.- Mueve el fichero “prueba1.txt” al directorio “nuevo” dentro de “princip”. El directorio “nuevo” no existe.</p>
+<ol>
+    <li>CD..</li>
+    <li>CD..</li>
+    <li>MD NUEVO</li>
+    <li>CD DOCS</li>
+    <li>CD EXCEL</li>
+    <li>MOVE PRUEBA1.TXT ..\..\NUEVO</li>
+</ol>
+<li><img class="img01" src="U1/pra2/25.png" alt=""></li>
+<p>26.- Visualiza el fichero “prueba1.txt”.</p>
+<ol>
+    <li>CD..</li>
+    <li>CD..</li>
+    <li>CD NUEVO</li>
+    <li>TYPE PRUEBA1.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/26.png" alt=""></li>
+<p>27.- Elimina el directorio “nuevo” y su contenido. Indica todos los comandos que puedes usar.</p>
+<ol>
+    <li>CD..</li>
+    <li>DELTREE NUEVO</li>
+    <li>DEL *.* CD..</li>
+    <li>RE NUEVO</li>
+</ol>
+<li><img class="img01" src="U1/pra2/27.png" alt=""></li>
+<p>28.- Mueve el fichero “fusión.txt” al directorio “textos” pero con el nombre “union.doc”.</p>
+<ol>
+    <li>MOVE FUSION.TXT ..\WORD\TEXTOS\UNION.DOC</li>
+</ol>
+<li><img class="img01" src="U1/pra2/28.png" alt=""></li>
+<p>29.- Visualiza atributos de ficheros del directorio “princip” y de sus subdirectorios.</p>
+<ol>
+    <li>ATTRIB /S</li>
+</ol>
+<li><img class="img01" src="U1/pra2/29.png" alt=""></li>
+<p>30.- Sitúate en “program” y visualiza atributos de los ficheros del directorio “textos”.</p>
+<ol>
+    <li>CD PROGRAM</li>
+    <li>ATTRIB C:\PRINCIP\DOC\WORD\TEXTOS</li>
+</ol>
+<li><img class="img01" src="U1/pra2/30.png" alt=""></li>
+<p>31.- Sitúate en “textos”. Visualiza los atributos de los ficheros con extensión “.txt”.</p>
+<ol>
+    <li>CD..</li>
+    <li>CD DOCS</li>
+    <li>CD TEXTOS</li>
+    <li>ATTRIB *.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/31.png" alt=""></li>
+<p>32.- Copia los ficheros del directorio “sistemas” en el directorio “textos”.</p>
+<ol>
+    <li>COPY *.* ..\..\..\DOCS\WORD\TEXTOS</li>
+</ol>
+<li><img class="img01" src="U1/pra2/32.png" alt=""></li>
+<p>33.- Asigna el atributo de solo lectura a los archivos del directorio “textos”.</p>
+<ol>
+    <li>ATTRIB +R *.*</li>
+</ol>
+<li><img class="img01" src="U1/pra2/33.png" alt=""></li>
+<p>34.- Intenta borrar los ficheros de este directorio. No utilices “DELTREE”.</p>
+<ol>
+    <li>DEL *.*</li>
+</ol>
+<li><img class="img01" src="U1/pra2/34.png" alt=""></li>
+<p>35.- Quita el atributo de sólo lectura a los archivos del fichero “textos”.</p>
+<ol>
+    <li>ATTRIB -R *.*</li>
+</ol>
+<li><img class="img01" src="U1/pra2/35.png" alt=""></li>
+<p>36.- Visualiza los atributos del directorio “textos”. Indica las formas para hacerlos.</p>
+<ol>
+    <li>ATTRIB</li>
+</ol>
+<li><img class="img01" src="U1/pra2/36.png" alt=""></li>
+<p>37.- Asigna el atributo oculto a los ficheros con extensión txt.</p>
+<ol>
+    <li>ATTRIB +H *.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/37.png" alt=""></li>
+<p>38.- Visualiza los ficheros del directorio “textos”. Los txt no aparecen.</p>
+<ol>
+    <li>DIR *.*</li>
+    <li>LOS TXT NO APARECEN.</li>
+</ol>
+<li><img class="img01" src="U1/pra2/38.png" alt=""></li>
+<p>39.- Quita los atributos de archivo y de lectura a los archivos con extensión bak.</p>
+<ol>
+    <li>ATTRIB -H -A *.BAK</li>
+</ol>
+<li><img class="img01" src="U1/pra2/39.png" alt=""></li>
+<p>40.- Quita el atributo de oculto de los ficheros con extensión txt.</p>
+<ol>
+    <li>ATTRIB -H *.TXT</li>
+</ol>
+<li><img class="img01" src="U1/pra2/40.png" alt=""></li>
+<p>41.- Modifica un archivo con extensión bak. Utiliza el “edit nombre del archivo con extensión”.</p>
+<ol>
+    <li>EDIT FICHERO2.BAK</li>
+</ol>
+<li><img class="img01" src="U1/pra2/41.png" alt=""></li>
+<p>42.- Visualiza los atributos de los archivos con extensión bak. ¿Qué ocurre? Todos tienen el atributo A, no ocurre nada.</p>
+<ol>
+    <li>TODOS TIENEN EL ATRIBUTO A, NO OCURRE NADA</li>
+</ol>
+<li><img class="img01" src="U1/pra2/42.png" alt=""></li>
+<p>43.- Asigna el atributo de lectura a un archivo con extensión .bak.</p>
+<ol>
+    <li>ATTRIB +R *.BAK</li>
+</ol>
+<li><img class="img01" src="U1/pra2/43.png" alt=""></li>
+<p>44.- Modifica archivo anterior con extensión .bak. Utiliza el “edit nombre del archivo sistemas”. ¿Qué ocurre? EDIT FICHERO2.BAK NO MODIFICA.</p>
+<ol>
+    <li>EDIT FICHERO2.BAK NO MODIFICA</li>
+</ol>
+<li><img class="img01" src="U1/pra2/44.png" alt=""></li>
+<p>45.- Copia un archivo .bak que no tenga el atributo de archivo, en el directorio sistemas. Visualiza los atributos  del fichero copiado ¿Qué ocurre? Que tiene atributo de tipo A y permite modificarlo.</p>
+<ol>
+    <li>QUE TIENE ATRIBUTO DE TIPO A Y PERMITE MODIFICARLO</li>
+</ol>
+<li><img class="img01" src="U1/pra2/45.png" alt=""></li>
+<li><img class="img01" src="U1/pra2/46.png" alt=""></li>
+<p>46.- Visualiza ayuda de format FORMAT /?</p>
+<li><img class="img01" src="U1/pra2/47.png" alt=""></li>
+<li><img class="img01" src="U1/pra2/48.png" alt=""></li>
+<p>47. Indica que tendrías que hacer para formatear un disquete para que tenga cargado el núcleo del sistema, teniendo en cuenta que no es un disco de 720 kb.</p>
+<p>FORMAT A: /F:720 /S</p>
+<p>Para formatear un disquete para que tenga cargado el núcleo del sistema, primero debemos formatear el disquete con el tamaño adecuado. Luego, debemos copiar los archivos necesarios para arrancar el sistema al disquete. Por último, debemos configurar la BIOS para que arranque desde el disquete.</p>
+<p>En pocas palabras, los pasos son los siguientes:</p>
+<ol>
+    <li>Formatear el disquete con el tamaño adecuado.</li>
+    <li>Copiar los archivos necesarios para arrancar el sistema.</li>
+    <li>Configurar la BIOS para que arranque desde el disquete.</li>
+</ol>
+<p>Si el disquete no es de un tamaño estándar, podemos usar un programa de formateo de disquetes para formatearlo con el tamaño correcto.</p>
+
+<p>48. Visualiza ayuda de SYS</p>
+<p>SYS /?</p>
+<li><img class="img01" src="U1/pra2/49.png" alt=""></li>
+<p>49. ¿De cuántas formas puedes crear un disco de arranque?</p>
+<p>FORMAT A: /S SYS A:</p>
+<ol>
+    <li>Usando Diskpart</li>
+    <li>Usando herramientas de terceros</li>
+    <li>Usando la herramienta de creación de medios de Windows 10/11</li>
+</ol>
+
+<p>51. Visualiza ayuda de diskcopy</p>
+<p>DISKCOPY /?</p>
+<li><img class="img01" src="U1/pra2/50.png" alt=""></li>
+<p>52. Introduce etiqueta al disco</p>
+<p>LABEL NOMBRE</p>
+<li><img class="img01" src="U1/pra2/51.png" alt=""></li>
+<p>53. Copia un archivo de tu USB al directorio Windows</p>
+<p>copy f:\loquequierocopiar.extencion C:\Windows</p>
+<li><img class="img01" src="U1/pra2/52.png" alt=""></li>
+<p>54. Ingresa al programa Excel desde el cmd</p>
+<p>excel.exe -e "nombre arch.excel”</p>
+<li><img class="img01" src="U1/pra2/53.png" alt=""></li>
+<li><img class="img01" src="U1/pra2/54.png" alt=""></li>
+<p>55. Busca el archivo calculadora y cópialo en la carpeta Mis documentos.</p>
+<p>Primero hay que buscar el archivo “calculadora”: C:\Windows\System32\calc.exe. Y luego lo copiamos a nuestra memoria, en este caso e:/</p>
+<p>copy C:\Windows\System32\calc.exe C:\Users\arestown\Documents</p>
+<li><img class="img01" src="U1/pra2/55.png" alt=""></li>
+<p>56. Ejecuta el Bloc de notas desde cmd.</p>
+<p>notepad.exe</p>
+<li><img class="img01" src="U1/pra2/56.png" alt=""></li>
+<li><img class="img01" src="U1/pra2/57.png" alt=""></li>
+<p>57. Ejecuta MS Word desde el cmd.</p>
+<p>C:\Program Files\Microsoft Office\Office12\winword.exe</p>
+<li><img class="img01" src="U1/pra2/58.png" alt=""></li>
+<li><img class="img01" src="U1/pra2/59.png" alt=""></li>
+<p>58. Ejecuta Paint desde el cmd</p>
+<p>C:\Windows\System32\mspaint.exe</p>
+<li><img class="img01" src="U1/pra2/60.png" alt=""></li>
+<li><img class="img01" src="U1/pra2/61.png" alt=""></li>
+<p>59. Abre un archivo de tu USB o partición D desde cmd.</p>
+<p>Primero debemos ir a la unidad lógica en la cual está nuestro archivo. Como predeterminado el cmd viene con C:/, debemos dejarlo hasta que quede el directorio raíz, y presionar d:, así ya tendremos acceso a nuestra partición o memoria USB. Luego buscamos el archivo y lo ejecutamos.</p>
+<p>D:/ calc.exe (se ejecuta la calculadora que habíamos copiado)</p>
+<li><img class="img01" src="U1/pra2/62.png" alt=""></li>
+<p>60. Ejecuta la orden CHKDSK</p>
+<p>CHKDSK</p>
+<li><img class="img01" src="U1/pra2/63.png" alt=""></li>
+
+    </div>
+</body>
+</html>
