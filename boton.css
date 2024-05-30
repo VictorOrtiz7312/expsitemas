@@ -1,0 +1,20 @@
+.btn{
+    display: block;
+    width: 50px;
+    font-family: Arial;
+    font-weight: 700;
+    background-color: rgb(27, 54, 211);
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 20px 500px 580px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: center;
+
+}
+.btn:hover{
+    background-color: black;
+    border: 2px solid rgb(11, 16, 49) ;
+    color:  rgb(255, 255, 255);
+}

@@ -1,0 +1,69 @@
+.slider {
+    width: 100%;
+    margin-top: 10px;
+    margin: 10px auto 0;
+    overflow: hidden;
+    
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: automatico 15s infinite alternate ease-in-out;
+    
+
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img{
+    width: 95%;
+    height: 100px;
+    
+
+}
+
+@media(min-width:250px){
+    .slider img{
+        height: 250px;
+    }
+}
+
+@keyframes automatico{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+    
+    120% {margin-left: -400%;}
+    125% {margin-left: -400%;}
+
+    145% {margin-left: -500%;}
+    150% {margin-left: -500%;}
+
+    170% {margin-left: -600%;}
+    175% {margin-left: -600%;}
+
+    200% {margin-left: -700%;}
+    220% {margin-left: -700%;}
+
+    225% {margin-left: -800%;}
+    245% {margin-left: -800%;}
+
+    250% {margin-left: -900%;}
+    270% {margin-left: -900%;}
+
+    275% {margin-left: -1000%;}
+    300% {margin-left: -1000%;}
+}
